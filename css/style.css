@@ -610,6 +610,9 @@ figure{
   position: relative;
   display: block;
 }
+.main-menu h3{
+  color: #ffffff;
+}
 .main-menu .navbar-collapse{
   padding:0px;  
 }
@@ -1344,7 +1347,7 @@ figure{
   position: relative;
   background: #22262e;
   color: #d4dae3;
-  padding: 133px 0px 121px 0px;
+  padding: 133px 0px 61px 0px;
 }
 .main-footer .widgets-section{
   position: relative;
@@ -1484,7 +1487,7 @@ figure{
   margin-bottom: 20px;
 }
 .main-footer .event-widget .footer-title{
-  margin-bottom: 34px;
+  margin-bottom: 14px;
 }
 .main-footer .event-widget{
   margin-right: 45px;
@@ -1544,7 +1547,41 @@ figure{
   color: #d4dae3;
 }
 .main-footer .newsletter-widget .footer-title{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.main-footer .footer-collabo {
+  margin: 30px 45px 0px 45px;
+}
+
+.main-footer .footer-collabo .footer-title{
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.main-footer .footer-collabo  .footer-title:before {
+  position: absolute;
+  content: '';
+  background: #ffffff;
+  width: 91px;
+  height: 1px;
+  left: -100%;
+  margin-left: -12px;
+  top: 50%;
+  margin-top: 0px;
+}
+.main-footer .footer-collabo  .footer-title:after {
+  position: absolute;
+  content: '';
+  background: #ffffff;
+  width: 91px;
+  height: 1px;
+  right: -100%;
+  margin-right: -12px;
+  top: 50%;
+  margin-top: 0px;
 }
 
 /** footer-bottom **/
@@ -1609,6 +1646,10 @@ figure{
   transform: translateY(0);
   transition-delay: 1000ms;
 }
+
+/* .slider-style-two .content-box .text{
+  font-size: 20px;
+} */
 
 .slider-style-two .slider-btn{
   position:relative;
@@ -1825,6 +1866,9 @@ figure{
 .about-style-four .sec-title{
   line-height: 54px;
   margin-bottom: 17px;
+}
+.about-style-five .title-box .sec-title{
+  margin-bottom: 7px;
 }
 .about-style-four .title-box{
   padding-bottom: 21px;
@@ -2136,7 +2180,10 @@ figure{
   background-repeat: no-repeat;
 }
 .service-style-five .title-box{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+}
+.service-style-five .title-box .sec-title{
+  margin-bottom: 8px;
 }
 .service-style-five .title-box .top-text{
   position: relative;
@@ -2145,6 +2192,7 @@ figure{
   font-weight: 400;
   color: #ff0000;
   text-transform: capitalize;
+  padding: 8px;
 }
 .service-style-five .title-box .top-text:before{
   position: absolute;
@@ -2608,6 +2656,9 @@ figure{
   flex-wrap: wrap;
   padding: 28px 170px;
 }
+.header-style-three .header-bottom .logo-outer{
+  position: relative;
+}
 .header-style-three .header-bottom .nav-outer .logo-box{
   position: relative;
 }
@@ -2909,6 +2960,15 @@ figure{
   font-family: 'Hind', sans-serif;
   line-height: 54px;
   color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+.dddlee1 .content-box .cta-title{
+  position: relative;
+  font-size: 45px;
+  font-family: 'Hind', sans-serif;
+  line-height: 54px;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 34px;
 }

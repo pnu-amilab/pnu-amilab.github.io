@@ -237,14 +237,14 @@
 			animateOut: 'fadeOut',
     		animateIn: 'fadeIn',
     		active: true,
-			smartSpeed: 500,
+			smartSpeed: 300,
 			autoplay: 6000,
 			navText: [ '<span class="flaticon-back"></span>', '<span class="flaticon-right-arrow"></span>' ],
 			responsive:{
 				0:{
 					items:1
 				},
-				600:{
+				400:{
 					items:1
 				},
 				1200:{
@@ -261,7 +261,7 @@
 			margin:30,
 			nav:true,
 			smartSpeed: 3000,
-			autoplay: 4000,
+			autoplay: 5000,
 			navText: [ '<span class="flaticon-back"></span>', '<span class="flaticon-right-arrow"></span>' ],
 			responsive:{
 				0:{
