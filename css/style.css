@@ -3264,8 +3264,8 @@ figure{
 }
 .book-section .book-inner .single-item{
   position: relative;
-  padding: 6px 0px 35px 130px;
-  margin-bottom: 40px;
+  padding: 6px 0px 0px 130px;
+  margin-bottom: 20px;
 }
 .book-section .book-inner .single-item .image-box{
   position: absolute;
