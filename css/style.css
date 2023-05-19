@@ -1550,21 +1550,25 @@ figure{
   margin-bottom: 10px;
 }
 
-.main-footer .footer-collabo {
-  margin: 30px 45px 0px 45px;
+.footer-collabo {
+  padding: 30px 45px 20px 45px;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
 }
 
-.main-footer .footer-collabo .footer-title{
+.footer-collabo .footer-title{
   position: relative;
   display: inline-block;
+  color: #000000;
   text-transform: capitalize;
   padding: 8px;
   margin-bottom: 8px;
 }
-.main-footer .footer-collabo  .footer-title:before {
+.footer-collabo  .footer-title:before {
   position: absolute;
   content: '';
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: #000000;
   width: 91px;
   height: 1px;
   left: -100%;
@@ -1572,10 +1576,11 @@ figure{
   top: 50%;
   margin-top: 0px;
 }
-.main-footer .footer-collabo  .footer-title:after {
+.footer-collabo  .footer-title:after {
   position: absolute;
   content: '';
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: #000000;
   width: 91px;
   height: 1px;
   right: -100%;
@@ -1588,7 +1593,9 @@ figure{
 
 .footer-bottom{
   position: relative;
-  background: #1c2026;
+  /* background: #1c2026; */
+  /* background: #8d929b; */
+  background: #8d929b;
   color: #d4dae3;
   padding: 20px 0px 19px 0px;
 }
@@ -1598,6 +1605,7 @@ figure{
 .footer-bottom .copyright a{
   color: #ff0000;
   font-weight: 500;
+  font-weight: bold;
 }
 .footer-bottom .copyright a:hover{
   color: #d4dae3;
@@ -1842,6 +1850,34 @@ figure{
   top: 50%;
 }
 
+.single-team-content .image-box{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%;
+  background: #f7f5f5;
+  outline: solid 1px black;
+}
+.single-team-content .image-box .team-image {
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  max-width: 100%; 
+  height: auto;
+  top: 50%;
+  left: 0;
+  background-size: cover;
+  transform: translate(0, -50%);
+}
+.team-title{
+position: relative;
+font-size: 26px;
+font-family: 'Hind', sans-serif;
+color: #030303;
+line-height: 35px;
+font-weight: 500;
+margin-bottom: 15px;
+}
 
 /*** 
 
@@ -3302,6 +3338,33 @@ figure{
 }
 .book-section .book-inner .single-item .image-box img{
   width: 100%;
+}
+.book-section .book-inner .year .year-name2{
+  position: relative;
+  font-size: 18px;
+  font-family: 'Hind', sans-serif;
+  color: #abacac;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.book-section .book-inner .year .year-name2:before{
+  position: absolute;
+  content: '';
+  background: #abacac;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -100px;
+  top: 4px;
+}
+.book-section .book-inner .year .year-name2:after{
+  position: absolute;
+  content: '';
+  background: #edeff2;
+  width: 55px;
+  height: 1px;
+  left: -85px;
+  top: 11px;
 }
 .book-section .book-inner .year .year-name{
   position: relative;
