@@ -1,1 +1,0 @@
-pnu-amilab.github.io
