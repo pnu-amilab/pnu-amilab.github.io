@@ -1,0 +1,40 @@
+  <!-- service-section -->
+  <section class="feature-section feature-style-three centred">
+    <div class="shape-1 wow zoomIn animated"></div>
+    <div class="shape-2 wow zoomIn animated"></div>
+    <div class="container">
+        <div class='dddlee1'>
+            <div class="content-box centred">
+                <div class="cta-title">Recent News & Notice<br />From Amilab</div>
+            </div>
+        </div>
+        <div class="row"> 
+            
+            {% for post in site.posts limit:4 %}<a href="{{post.url}}"></a>
+            <div class="col-lg-3 col-md-6 col-sm-12 service-column">
+                
+                <div class="single-service-content inner-box">
+                    <figure class="image-box">
+                        <img src="{{post.image}}" >
+                        <div class="overlay">
+                            <div class="wrapper">
+                                <a href="{{post.url}}"><i class="fa fa-link"></i></a>
+                            </div>                                    
+                        </div>
+                    </figure>
+                    <div class="lower-content">
+                        <h5><a href="{{post.url}}">
+                            {{post.title}}
+                        </a></h5>
+                        <div class="text">
+                            {{post.sub}}
+                        </div>
+                        <div class="link"><a href="{{post.url}}" class="theme-btn-two">Read More</a></div>
+                    </div>
+                </div>
+                
+            </div></a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+---
+layout: home
+title: main_news
+---
+{% for post in site.posts limit:4 %}
+            <div class="col-lg-3 col-md-6 col-sm-12 service-column">
+                <div class="single-service-content inner-box">
+                    <figure class="image-box">
+                        <img src="{{post.image}}" >
+                        <div class="overlay">
+                            <div class="wrapper">
+                                <a href="./team.html"><i class="fa fa-link"></i></a>
+                            </div>                                    
+                        </div>
+                    </figure>
+                    <div class="lower-content">
+                        <h5><a href="./team.html">
+                            {{post.title}}
+                        </a></h5>
+                        <div class="text">
+                            {{post.excerpt}}
+                        </div>
+                        <div class="link"><a href="./team.html" class="theme-btn-two">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}

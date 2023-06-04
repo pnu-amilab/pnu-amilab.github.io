@@ -1555,6 +1555,22 @@ figure{
   background-color: #f2f2f2;
   color: #f2f2f2;
 }
+.footer-column
+{
+  /* position: absolute; */
+  /* width: 100%;
+  height: 100%; */
+  /* max-width: 100%; 
+  height: auto; */
+  /* top: 50%;
+  left: 0;
+  background-size: cover;
+  transform: translate(0, -50%); */
+}
+.footer-column .collaborators_size{
+  max-width: 100%; 
+  height: auto;
+}
 
 .footer-collabo .footer-title{
   position: relative;
@@ -2088,7 +2104,7 @@ margin-bottom: 15px;
   -moz-transition: all 100ms ease;
   -ms-transition: all 1000ms ease;
   -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
+  transition: all 3000ms ease;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);
