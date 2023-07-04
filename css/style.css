@@ -1260,12 +1260,37 @@ figure{
 .single-news-content .image-box{
   position: relative;
   overflow: hidden;
+
+  /* 추가 */
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%;
+  background: #f7f5f5;
+  outline: solid 1px black;
 }
-.single-news-content .image-box img{
+
+/* .single-news-content .image-box img{
   width: 100%;
   transition: all 500ms ease;
   transform: scale(1.0);
+} */
+
+
+.single-news-content .image-box .news_main_img{
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  max-width: 100%; 
+  height: auto;
+  top: 50%;
+  left: 0;
+  background-size: cover;
+  transform: translate(0, -50%);
+  transition: all 500ms ease;
+  transform: scale(1.0);
 }
+
 .single-news-content:hover .image-box img{
   transform: scale(1.1);
 }
@@ -2639,6 +2664,9 @@ margin-bottom: 15px;
 .news-style-two .single-news-content:hover{
   box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
 }
+
+
+
 
 /** brand-section **/
 
