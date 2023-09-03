@@ -2,7 +2,7 @@
 layout: post
 author: dddlee
 title: Our lab awards 3 research grants
-image: 
+image: images/news/2023/new_project.png   
 sub: 우리 연구실은 양산부산대학교병원과 씨젠의료재단과의 새로운 공동연구를 시작합니다.
 ---
 
