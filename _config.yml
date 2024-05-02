@@ -1,0 +1,3 @@
+collections:
+  photos:
+    output: true

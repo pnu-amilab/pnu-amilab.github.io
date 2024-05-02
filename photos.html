@@ -1,0 +1,86 @@
+---
+layout: other
+title: News
+---
+<!-- page-title -->
+<section class="page-title centred" style="background-image: url(images/background/144.jpg);">
+    <div class="container">
+        <div class="content-box">
+            <div class="title">Gallery</div>
+            <h5 style="color:white">AMI LAB Memories</h5>
+            <h4 style="color:white">AMI LAB의 추억을 기록하는 공간입니다!</h4>
+            <ul class="bread-crumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Photos</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- page-title end -->
+
+<style>
+    .news-column {
+        margin-bottom: 15px; 
+    }
+    .carousel-item img {
+        width: 900px;  /* 이미지의 너비를 500px로 설정 */
+        height: 400px; /* 이미지의 높이를 300px로 설정 */
+        object-fit: cover; /* 이미지가 컨테이너에 맞도록 조절되며, 비율은 유지하면서 빈 공간 없이 채워짐 */
+    }
+</style>
+
+<section class="our-blog news-section sidebar-page-container gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-side">
+                <div class="our-blog-content default-blog-content">
+                    <div class="row">
+                        {% for post in site.photos %}
+                        <div class="col-lg-6 col-md-6 col-sm-12 news-column">
+                            <div class="single-news-content">
+                                <!-- Carousel Start -->
+                                <div id="carouselExampleIndicators{{ forloop.index }}" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        {% for image in post.images %}
+                                        <li data-target="#carouselExampleIndicators{{ forloop.parentloop.index }}" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+                                        {% endfor %}
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        {% for image in post.images %}
+                                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                            <img src="{{ image }}" class="d-block w-100" alt="...">
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators{{ forloop.index }}" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators{{ forloop.index }}" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Carousel End -->
+                                <!--이미지 밑에 title오는 태그-->
+                                <div class="post-meta">
+                                    <ul style="margin-top: 20px;">
+                                        <li class = "text" style="text-align: center; font-weight: bold;">{{ post.title }}</li>
+                                         <!-- 인스타그램 스타일 해시태그 추가 -->
+                                         <li style=" color: #3D85C6;">{{ post.hash }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                        {% endfor %} 
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- news -->
