@@ -29,16 +29,16 @@
                                     <li><a href="index.html"><h3>Home</h3></a>
 
                                     </li>
-                                    <li class="dropdown"><a href="research.html"><h3>Research</h3></a>
-                                        <ul>
-                                            <li><a href="/research.html">Research summary</a></li>
-                                            <li><a href="/research11.html">AI-based Medical Imaging (KR.)</a></li>
-                                            <li><a href="/research12.html">AI-based Medical Imaging (ENG.)</a></li>
-                                            <li><a href="/research21.html">Clinical Ultrasound Imaging (KR.)</a></li>
-                                            <li><a href="/research22.html">Clinical Ultrasound Imaging (ENG.)</a></li>
+                                    <li class="dropdown {% if page.url == '/research.html' %} current{% endif %}">
+                                        <a href="/research.html" onclick="window.location='/research.html';"><h3>Research</h3></a>
+                                        <ul class="dropdown-menu">
+                                          <!-- <li><a href="/research.html">Research Summary</a></li> -->
+                                          <li><a href="/research11.html">AI-based Medical Imaging (KR.)</a></li>
+                                          <li><a href="/research12.html">AI-based Medical Imaging (ENG.)</a></li>
+                                          <li><a href="/research21.html">Clinical Ultrasound Imaging (KR.)</a></li>
+                                          <li><a href="/research22.html">Clinical Ultrasound Imaging (ENG.)</a></li>
                                         </ul>
-                                    </li> 
-                                    </li> 
+                                    </li>
                                     <li><a href="team.html"><h3>Team</h3></a>
                                         <!-- <li class="dropdown"><a href="team.html"><h3>Team</h3></a>
                                         <ul>
@@ -46,12 +46,17 @@
                                             <li><a href="team-details.html">Team Details</a></li>
                                         </ul> -->
                                     </li>
-                                    <li><a href="publication.html"><h3>Publications</h3></a>
-                                        <!-- <li class="dropdown"><a href="publication.html"><h3>Publications</h3></a>
+                                    <li class="dropdown">
+                                        <a href="/publication.html" onclick="window.location='/publication.html';">
+                                            <h3>Publications</h3>
+                                        </a>
                                         <ul>
-                                            <li><a href="event.html">Our Events</a></li>
-                                            <li><a href="event-details.html">Event Details</a></li>
-                                        </ul> -->
+                                            <!-- <li><a href="/publication.html">Publications</a></li> -->
+                                            <li><a href="/journal.html">Journal</a></li>
+                                            <li><a href="/conference.html">Conference</a></li>
+                                            <li><a href="/patent.html">Patent</a></li>
+                                            <li><a href="/korean_papers.html">Domestic</a></li>
+                                        </ul>
                                     </li>
                                     <li ><a href="news.html"><h3>News</h3></a>
                                     <!-- <li class="dropdown"><a href="#"><h3>News</h3></a>    
@@ -101,16 +106,16 @@
                                         <li class="current dropdown"><a href="index.html">Home</a>
                                         </li>
                                         
-                                        <li class="dropdown"><a href="research.html">Research</a> 
-                                                <ul>
-                                                    <li><a href="/research.html">Research summary</a></li>
-                                                    <li><a href="/research11.html">AI-based Medical Imaging (KR.)</a></li>
-                                                    <li><a href="/research12.html">AI-based Medical Imaging (ENG.)</a></li>
-                                                    <li><a href="/research21.html">Clinical Ultrasound Imaging (KR.)</a></li>
-                                                    <li><a href="/research22.html">Clinical Ultrasound Imaging (ENG.)</a></li>
-                                                </ul>
-                                            </li> 
-                                        </li> 
+                                        <li class="dropdown {% if page.url == '/research.html' %} current{% endif %}">
+                                            <a href="/research.html" onclick="window.location='/research.html';">Research</a>
+                                            <ul class="dropdown-menu">
+                                              <!-- <li><a href="/research.html">Research Summary</a></li> -->
+                                              <li><a href="/research11.html">AI-based Medical Imaging (KR.)</a></li>
+                                              <li><a href="/research12.html">AI-based Medical Imaging (ENG.)</a></li>
+                                              <li><a href="/research21.html">Clinical Ultrasound Imaging (KR.)</a></li>
+                                              <li><a href="/research22.html">Clinical Ultrasound Imaging (ENG.)</a></li>
+                                            </ul>
+                                        </li>
                                         <li ><a href="team.html">Team</a>
                                             <!-- <li class="dropdown"><a href="team.html">Team</a>
                                             <ul>
@@ -118,12 +123,15 @@
                                                 <li><a href="team-details.html">Team Details</a></li>
                                             </ul> -->
                                         </li>
-                                        <li ><a href="publication.html">Publications</a>
-                                            <!-- <li class="dropdown"><a href="publication.html">Publications</a>
+                                        <li class="dropdown{% if page.url == '/publication.html' %} current{% endif %}">
+                                            <a href="/publication.html" onclick="window.location='/publication.html';">Publications</a>
                                             <ul>
-                                                <li><a href="event.html">Our Events</a></li>
-                                                <li><a href="event-details.html">Event Details</a></li>
-                                            </ul> -->
+                                                <!-- <li><a href="/publication.html">Publications</a></li> -->
+                                                <li><a href="/journal.html">Journal</a></li>
+                                                <li><a href="/conference.html">Conference</a></li>
+                                                <li><a href="/patent.html">Patent</a></li>
+                                                <li><a href="/korean_papers.html">Domestic</a></li>
+                                            </ul>
                                         </li>
                                         <li ><a href="news.html">News</a>
                                             <!-- <li class="dropdown"><a href="#">News</a>

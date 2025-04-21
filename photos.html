@@ -49,7 +49,7 @@ title: News
                                     <div class="carousel-inner">
                                         {% for image in post.images %}
                                         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                            <img src="{{ image }}" class="d-block w-100" alt="...">
+                                            <img src="{{ image }}" class="d-block w-100" alt="..." loading="lazy">
                                         </div>
                                         {% endfor %}
                                     </div>
