@@ -166,3 +166,85 @@ title: Rereach
         </div>
     </section>
     <!-- event-details end -->
+
+    <div class="lang-switch-container" data-lang="kor">
+        <a href="research22.html" class="lang-switch">
+          <div class="slider"></div>
+          <span class="label-kor">KOR</span>
+          <span class="label-eng">ENG</span>
+        </a>
+      </div>
+      
+    
+      <style>
+        .lang-switch-container {
+          position: fixed;
+          bottom: 23px;
+          right: 130px;
+          z-index: 9999;
+        }
+        
+        .lang-switch {
+          position: relative;
+          display: inline-block;
+          width: 120px;       /* ⬅ 가로 크게 */
+          height: 60px;       /* ⬅ 세로 크게 */
+          background-color: #ddd;
+          border-radius: 30px;
+          text-decoration: none;
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+        }
+        
+        .lang-switch .slider {
+          position: absolute;
+          top: 4px;
+          width: 52px;        /* ⬅ 슬라이더 더 큼 */
+          height: 52px;
+          background-color: #000;
+          border-radius: 50%;
+          transition: left 0.3s ease;
+          z-index: 1;
+        }
+        
+        .lang-switch .label-kor,
+        .lang-switch .label-eng {
+          position: absolute;
+          width: 50%;
+          height: 100%;
+          line-height: 60px;   /* ⬅ 높이에 맞게 */
+          text-align: center;
+          font-size: 16px;     /* ⬅ 글씨도 살짝 키움 */
+          font-weight: bold;
+          color: white;
+          z-index: 2;
+        }
+        
+        .lang-switch .label-kor {
+          left: 0;
+        }
+        
+        .lang-switch .label-eng {
+          right: 0;
+        }
+        
+        .lang-switch-container[data-lang="kor"] .slider {
+          left: 4px;
+        }
+        
+        .lang-switch-container[data-lang="eng"] .slider {
+          left: 64px; /* 120px width의 반 + padding 고려 */
+        }
+        </style>
+        
+        
+    
+        <script>
+            
+            const link = document.querySelector('.lang-switch');
+            if (document.querySelector('.lang-switch-container').dataset.lang === 'kor') {
+              link.href = "research22.html";
+            } else {
+              link.href = "research21.html";
+            }
+          </script>
