@@ -24,8 +24,8 @@ title: Rereach
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/chest ct.png" alt=""></figure>
-                            <div class="event-title">Development of Artificial intelligence-based real-time image guide for bronchoscopic biopsy of peripheral pulmonary lesions
+                            <figure class="image-box"><img src="images/research/Airway.jpg" alt=""></figure>
+                            <div class="event-title">Airway Extraction from Chest CT using Deep Learning
                             </div>
                             <!-- <ul class="info-content">
                                 <li><i class="fa fa-map-marker"></i>White Palace, Brookyn, NYC</li>
@@ -34,7 +34,7 @@ title: Rereach
                             </ul> -->
                             <!-- <div class="top-text">인공지능 기반 의료영상</div> -->
                             <div class="text">
-                                <p style="text-align: justify;">Lung cancer is the leading cause of death among Koreans. Small peripheral lung cancers often do not show target lesions in imaging studies, making it difficult to perform tissue biopsy due to the lack of visible access routes. If an accurate peripheral bronchus extraction is performed on chest CT and a virtual path is constructed by merging with radiographic images, it would be possible to conduct examinations in real-time while confirming the path similar to angiography. Therefore, in this study, we are collaborating with the Department of Respiratory Medicine at Yangsan Pusan National University Hospital to develop a new image-guided method based on deep learning that can provide easy and accurate guidance for accessing peripheral lesions, aiming to overcome the limitations of peripheral lung lesion tissue biopsy and successfully perform early lung cancer tissue examination.
+                                <p style="text-align: justify;">While invasive procedures such as thoracoscopy can be used for tissue biopsy in the chest, they often increase the patient’s burden and may result in poor clinical outcomes. As a less invasive alternative, tissue samples can be collected through bronchoscopy. However, this requires a detailed map of the airway to navigate toward the target lesion. Conventional pixel intensity-based airway segmentation methods suffer from high false-positive rates (FPR) and often fail to detect small peripheral airways. To overcome these limitations, deep learning (DL)-based approaches have been proposed, resulting in improved scores. Nevertheless, they still exhibit limited sensitivity for fine airways, and the incompleteness of ground-truth labels for supervised learning poses additional challenges. In this study, we propose an Encoder-Guided Attention U-Net to enhance the sensitivity of airway detection in chest CT images. The proposed model is capable of detecting deeper and finer airway branches even under incomplete supervision. It achieved state-of-the-art (SOTA) performance in terms of Tree Detection Ratio (TDR) and Branch Detection Ratio (BDR) in the long-term validation phase of the ATM’22 Challenge. In this study, we are collaborating with the Department of Respiratory Medicine at Yangsan Pusan National University Hospital to develop a new image-guided method based on deep learning that can provide easy and accurate guidance for accessing peripheral lesions, aiming to overcome the limitations of peripheral lung lesion tissue biopsy and successfully perform early lung cancer tissue examination.
 
                                 </p>
 
@@ -46,54 +46,40 @@ title: Rereach
                     <hr />
                 </div>
 
-                
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/dect.png" alt=""></figure>
-                            <div class="event-title">
-                                Deep learning approaches for bone marrow edema detection and interpretation in dual-energy CT</div>
-
-                            <!-- <div class="top-text">의료 초음파 영상</div> -->
+                            <figure class="image-box"><img src="images/research/LC.jpg" alt=""></figure>
+                            <div class="event-title">Lung Cancer Segmentation in PET-CT using Deep Neural Networks
+                            </div>
+                            <!-- <ul class="info-content">
+                                <li><i class="fa fa-map-marker"></i>White Palace, Brookyn, NYC</li>
+                                <li><i class="fa fa-clock-o"></i>10:00AM - 11:00AM</li>
+                                <li><i class="fa fa-calendar"></i>Nov 02, 2018</li>
+                            </ul> -->
+                            <!-- <div class="top-text">인공지능 기반 의료영상</div> -->
                             <div class="text">
-                                <p style="text-align: justify;">
-                                    Dual-energy computed tomography can be an excellent substitute for magnetic resonance imaging to identify bone marrow edema; however, it has rarely been used in practice owing to low contrast issues. To overcome these problems, we constructed a framework based on deep learning techniques to screen for diseases from axial bone images and identify the local positions of bone lesions. To cope with the scarcity of labeled samples, we developed a generative adversarial network (GAN) beyond conventional augmentation (CA) methods based on geometric transformation to extend new expressions. We developed the concepts of data augmentation optimized for GAN to stably generate synthetic images and methods to train a classification model on real and synthetic samples. In addition, we developed an explainable AI technique that leverages principal component analysis to facilitate the visual analysis of the network’s results. (Collaborate with the Department of Radiology, Pusan National University Yangsan Hospital)
+                                <p style="text-align: justify;">Lung cancer is one of the most prevalent and deadly types of cancer, and early diagnosis followed by timely treatment is critically important for improving patient outcomes. In some cases, lesions may not be clearly visible in CT images, which is why PET-CT scans are sequentially acquired to provide a more comprehensive diagnosis. PET imaging highlights regions of high metabolic activity, which helps identify potential malignancies. However, determining whether these areas actually represent cancerous tissue requires expert interpretation, typically performed by experienced nuclear medicine physicians. This diagnostic process is time-consuming, labor-intensive, and subject to inter-observer variability. To address these challenges, deep learning (DL)-based computer-aided diagnostic tools are gaining attention for their ability to automatically detect and segment cancerous lesions in PET-CT images. In this study, we propose a U-Net-based DL algorithm that automatically extracts lung cancer regions from PET-CT scans. The proposed framework includes image registration to handle multimodal data, ground truth preprocessing (mask pre-processing), and PET-CT axial alignment, along with post-processing steps to enhance sensitivity.
+
                                 </p>
-                                
+
                             </div>
                         </div>
+
+
                     </div>
                     <hr />
-                </div>
+                </div>                
+
+
+
 
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/bmd.png" alt=""></figure>
+                            <figure class="image-box"><img src="images/research/workflow2.png" alt=""></figure>
                             <div class="event-title">
-                                Prediction of bone mineral density in CT using deep learning with explainability 
-                            </div>
-
-                            <!-- <div class="top-text">의료 초음파 영상</div> -->
-                            <div class="text">
-                                <p style="text-align: justify;">
-                                    Bone mineral density (BMD) is a key feature in diagnosing bone diseases. Although computational tomography (CT) is a common imaging modality, it seldom provides bone mineral density information in a clinic owing to technical difficulties. Thus, a dual-energy X-ray absorptiometry (DXA) is required to measure bone mineral density at the expense of additional radiation exposure. In this study, We developed a deep learning framework to estimate the bone mineral density from an axial cut of the L1 bone on computational tomography. In addition, We identified that the network intensively sees a local area spanning tissues around the vertebral foramen using explainable artificial intelligence techniques. This method is well suited as an auxiliary tool in clinical practice and as an automatic screener for identifying latent patients in computational tomography databases. (Collaborate with Busan Medical Center, Department of Orthopedic Surgery, Busan)
-This study was supported by Institute of Information and communications Technology Planning and Evaluation (IITP) grant funded by the Korea government (MSIT) (Artificial Intelligence Convergence Research Center (Pusan National University). 
-
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
-
-                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
-                    <div class="event-details-content">
-                        <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/pic.png" alt=""></figure>
-                            <div class="event-title">
-                                Pathological Image Compression
+                                Pathological Image Compression Using Deep Learning Techniques
                             </div>
 
                             <!-- <div class="top-text">의료 초음파 영상</div> -->
@@ -109,32 +95,16 @@ This study was supported by Institute of Information and communications Technolo
                 </div>
 
 
-                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
-                    <div class="event-details-content">
-                        <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/ic.png" alt=""></figure>
-                            <div class="event-title">
-                                Development of a deep learning program for confirmation of ureters driving in non-contrast enhanced lumbar CT images
-                            </div>
-
-                            <!-- <div class="top-text">의료 초음파 영상</div> -->
-                            <div class="text">
-                                <p style="text-align: justify;">
-                                    During CT scans, contrast agents are used to increase the visibility of specific organs, blood vessels, or tissues by enhancing the contrast of structures or fluids within the body. However, contrast agents can have negative effects, such as causing allergic reactions or stomach cramps. In rare cases, they can even cause serious adverse reactions that may result in the death of patients. This study aims to develop an AI system that can identify the ureter without the need for a contrast agent. The study is being conducted in collaboration with the Department of Neurosurgery at Pusan National University Hospital.
-
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
 
 
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/ic2_2.png" alt=""></figure>
+                            <figure class="image-box">
+                                <video controls autoplay muted loop style="max-width: 100%; height: auto;">
+                                <source src="{{ '/assets/videos/final_demo.mp4' | relative_url }}" type="video/mp4">
+                                </video>
+                            </figure>
                             <div class="event-title">
                                 Development of an Object Detection Algorithm for Prediction of Vocal Cords location Prediction 
                             
@@ -177,6 +147,68 @@ This study was supported by Institute of Information and communications Technolo
                     <hr />
                 </div>
 
+                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
+                    <div class="event-details-content">
+                        <div class="content-style-one">
+                            <figure class="image-box"><img src="images/research/dect.png" alt=""></figure>
+                            <div class="event-title">
+                                Deep learning approaches for bone marrow edema detection and interpretation in dual-energy CT</div>
+
+                            <!-- <div class="top-text">의료 초음파 영상</div> -->
+                            <div class="text">
+                                <p style="text-align: justify;">
+                                    Dual-energy computed tomography can be an excellent substitute for magnetic resonance imaging to identify bone marrow edema; however, it has rarely been used in practice owing to low contrast issues. To overcome these problems, we constructed a framework based on deep learning techniques to screen for diseases from axial bone images and identify the local positions of bone lesions. To cope with the scarcity of labeled samples, we developed a generative adversarial network (GAN) beyond conventional augmentation (CA) methods based on geometric transformation to extend new expressions. We developed the concepts of data augmentation optimized for GAN to stably generate synthetic images and methods to train a classification model on real and synthetic samples. In addition, we developed an explainable AI technique that leverages principal component analysis to facilitate the visual analysis of the network’s results. (Collaborate with the Department of Radiology, Pusan National University Yangsan Hospital)
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                
+                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
+                    <div class="event-details-content">
+                        <div class="content-style-one">
+                            <figure class="image-box"><img src="images/research/bmd.png" alt=""></figure>
+                            <div class="event-title">
+                                Prediction of bone mineral density in CT using deep learning with explainability 
+                            </div>
+
+                            <!-- <div class="top-text">의료 초음파 영상</div> -->
+                            <div class="text">
+                                <p style="text-align: justify;">
+                                    Bone mineral density (BMD) is a key feature in diagnosing bone diseases. Although computational tomography (CT) is a common imaging modality, it seldom provides bone mineral density information in a clinic owing to technical difficulties. Thus, a dual-energy X-ray absorptiometry (DXA) is required to measure bone mineral density at the expense of additional radiation exposure. In this study, We developed a deep learning framework to estimate the bone mineral density from an axial cut of the L1 bone on computational tomography. In addition, We identified that the network intensively sees a local area spanning tissues around the vertebral foramen using explainable artificial intelligence techniques. This method is well suited as an auxiliary tool in clinical practice and as an automatic screener for identifying latent patients in computational tomography databases. (Collaborate with Busan Medical Center, Department of Orthopedic Surgery, Busan)
+This study was supported by Institute of Information and communications Technology Planning and Evaluation (IITP) grant funded by the Korea government (MSIT) (Artificial Intelligence Convergence Research Center (Pusan National University). 
+
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+
+                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
+                    <div class="event-details-content">
+                        <div class="content-style-one">
+                            <figure class="image-box"><img src="images/research/ic.png" alt=""></figure>
+                            <div class="event-title">
+                                Development of a deep learning program for confirmation of ureters driving in non-contrast enhanced lumbar CT images
+                            </div>
+
+                            <!-- <div class="top-text">의료 초음파 영상</div> -->
+                            <div class="text">
+                                <p style="text-align: justify;">
+                                    During CT scans, contrast agents are used to increase the visibility of specific organs, blood vessels, or tissues by enhancing the contrast of structures or fluids within the body. However, contrast agents can have negative effects, such as causing allergic reactions or stomach cramps. In rare cases, they can even cause serious adverse reactions that may result in the death of patients. This study aims to develop an AI system that can identify the ureter without the need for a contrast agent. The study is being conducted in collaboration with the Department of Neurosurgery at Pusan National University Hospital.
+
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
 
 
             </div>

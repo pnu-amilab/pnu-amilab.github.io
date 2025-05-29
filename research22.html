@@ -21,25 +21,23 @@ title: Rereach
        <section class="event-details event-page">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/3dus.png" alt=""></figure>
+                            <figure class="image-box"><img src="images/research/US3D-PAUS.jpg" alt=""></figure>
                             <div class="event-title">
-                                3D Ultrasound Panorama Imaging using Neural Radiance Field
+                                Deep Learning-based Ultrasound Scan Motion Estimation and 3D Volume Reconstruction
+
                             </div>
-                            <!-- <ul class="info-content">
-                                <li><i class="fa fa-map-marker"></i>White Palace, Brookyn, NYC</li>
-                                <li><i class="fa fa-clock-o"></i>10:00AM - 11:00AM</li>
-                                <li><i class="fa fa-calendar"></i>Nov 02, 2018</li>
-                            </ul> -->
-                            <!-- <div class="top-text">인공지능 기반 의료영상</div> -->
+
+                            <!-- <div class="top-text">의료 초음파 영상</div> -->
                             <div class="text">
                                 <p style="text-align: justify;">
-                                    Ultrasound 3D imaging can be achieved by a mechanically oscillating array, but the limitation is a narrow field of view. An alternative method is Panoramic imaging which forms a wide 3D view by sequentially stacking 2D sections from freehand sweeps with a standard transducer. However, few studies have considered the poor spatial resolution along the elevational direction. Although each transmission beam is focused by a probe lens, the beam passes through a wide region in near-field and far-field. As a result, each 2D image is the projection result of the thick beam. In this study, we aim to develop a deep-learning to reconstruct a 3D volume from the projections and enhance the elevational resolution. Our contribution is applying NeRF to the task of 3D panoramic imaging to optimally combine the projection images. 
+Conventional ultrasound (US) systems with one-dimensional (1D) array transducers are typically used to capture cross-sectional images of regions of interest (RoIs). Despite their advantages—such as cost-efficiency, safety, and real-time imaging capabilities—US imaging requires skilled sonographers due to the limited two-dimensional (2D) field of view (FoV). To address this limitation, we propose a deep learning (DL)-based scan motion estimation framework composed of a ResNet-based encoder, a correlation operation, and a customized global-local attention module. The estimated relative motions are integrated to reconstruct the absolute scan trajectory. Each 2D US frame is then aligned in 3D space using the reconstructed scan path, thereby generating a 3D US volume. Furthermore, this approach enables the reconstruction and visualization of vascular structures by integrating Power Doppler (PD) or Photoacoustic (PA) ultrasound imaging. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT)
 
                                 </p>
-
+                                
                             </div>
                         </div>
                     </div>
@@ -68,27 +66,6 @@ title: Rereach
                     <hr />
                 </div>
 
-                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
-                    <div class="event-details-content">
-                        <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/usi.png" alt=""></figure>
-                            <div class="event-title">
-                                Ultrasound Image Reconstruction using Deep Learning
-
-                            </div>
-
-                            <!-- <div class="top-text">의료 초음파 영상</div> -->
-                            <div class="text">
-                                <p style="text-align: justify;">
-                                    The Ultrafast Ultrasound (US) framework enables high frame-rate imaging by using plane or divergent waves to capture a wide field of view at once. To improve contrast and spatial resolution, multiple waves are transmitted at different angles to form one image. Currently, Deep Learning (DL) is being used in many medical fields to improve image quality or quickly reconstruct an image from raw data under ill-posed acquisition conditions. We are developing an end-to-end DL model to obtain a more enhanced US B-mode image from a smaller volume of raw data and examining its performance when supervised by a set of high-quality images. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT)
-
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                </div>
 
 
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
@@ -160,7 +137,30 @@ title: Rereach
                     <hr />
                 </div>
 
+                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
+                    <div class="event-details-content">
+                        <div class="content-style-one">
+                            <figure class="image-box"><img src="images/research/3dus.png" alt=""></figure>
+                            <div class="event-title">
+                                3D Ultrasound Panorama Imaging using Neural Radiance Field
+                            </div>
+                            <!-- <ul class="info-content">
+                                <li><i class="fa fa-map-marker"></i>White Palace, Brookyn, NYC</li>
+                                <li><i class="fa fa-clock-o"></i>10:00AM - 11:00AM</li>
+                                <li><i class="fa fa-calendar"></i>Nov 02, 2018</li>
+                            </ul> -->
+                            <!-- <div class="top-text">인공지능 기반 의료영상</div> -->
+                            <div class="text">
+                                <p style="text-align: justify;">
+                                    Ultrasound 3D imaging can be achieved by a mechanically oscillating array, but the limitation is a narrow field of view. An alternative method is Panoramic imaging which forms a wide 3D view by sequentially stacking 2D sections from freehand sweeps with a standard transducer. However, few studies have considered the poor spatial resolution along the elevational direction. Although each transmission beam is focused by a probe lens, the beam passes through a wide region in near-field and far-field. As a result, each 2D image is the projection result of the thick beam. In this study, we aim to develop a deep-learning to reconstruct a 3D volume from the projections and enhance the elevational resolution. Our contribution is applying NeRF to the task of 3D panoramic imaging to optimally combine the projection images. 
 
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
 
             </div>
         </div>
