@@ -66,6 +66,33 @@ Conventional ultrasound (US) systems with one-dimensional (1D) array transducers
                     <hr />
                 </div>
 
+                <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
+                    <div class="event-details-content">
+                        <div class="content-style-one">
+                            <figure class="image-box"><img src="images/research/SoS.jpeg" alt="" style="height: 400px;"></figure>
+                            <div class="event-title">
+                                Deep learning (DL)-based Speed of Sound (SoS) reconstruction
+
+                            </div>
+
+                            <!-- <div class="top-text">의료 초음파 영상</div> -->
+                            <div class="text">
+                                <p style="text-align: justify;">
+
+                                    This study proposes a DL-based framework to estimate SoS map from the ultrasound(US) signals, such as raw radiofrequency (RF) data and B-mode images. 
+                                    In the encoding stage, both the RF data and B-mode images are refined via ResNet-based networks, in parallel. 
+                                    Then, the decoder performs SoS map reconstruction by incorporating RF and B-mode features. 
+                                    The training data, simulated using the k-wave toolbox, reflect real-tissue conditions, such as density, SoS, and anatomical variations. 
+                                    Experimental results demonstrate enhanced quantitative scores(MAE, PSNR, Correlation), along with precise reconstructed SoS maps from US raw signals. 
+                                    We expect that the proposed method has potential to contribute clinical applications, by B-mode quality enhancement and tissue properties inspection. 
+
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>                
 
 
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
@@ -116,17 +143,16 @@ Conventional ultrasound (US) systems with one-dimensional (1D) array transducers
                 <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 event-column">
                     <div class="event-details-content">
                         <div class="content-style-one">
-                            <figure class="image-box"><img src="images/research/us3d.png" alt=""></figure>
+                            <figure class="image-box"><img src="images/research/usi.png" alt=""></figure>
                             <div class="event-title">
-                                Freehand 3D Ultrasound Reconstruction without Positioning Sensor using Deep Learning 
-
+                                Ultrasound Image Reconstruction using Deep Learning
 
                             </div>
 
                             <!-- <div class="top-text">의료 초음파 영상</div> -->
                             <div class="text">
                                 <p style="text-align: justify;">
-                                    Clinical Ultrasound is one of the universal imaging modalities. To capture a large field of view, a special transducer such as a 2D-array or mechanically oscillating array is needed, but for certain clinical applications, the field is limited. An alternative method is panoramic imaging, which involves sequentially aligning image sections acquired from freehand sweeps with a standard transducer. An external device can be used to track the transducer’s motion to reconstruct 3D volume perfectly from 2D sections. However, such sensors can provide incorrect measurements in a clinical setting due to various optical or electrical interferences. In this paper, we explore a deep learning (DL) framework that can predict scan trajectories using US data and images without the need for an external device. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT). 
+                                    The Ultrafast Ultrasound (US) framework enables high frame-rate imaging by using plane or divergent waves to capture a wide field of view at once. To improve contrast and spatial resolution, multiple waves are transmitted at different angles to form one image. Currently, Deep Learning (DL) is being used in many medical fields to improve image quality or quickly reconstruct an image from raw data under ill-posed acquisition conditions. We are developing an end-to-end DL model to obtain a more enhanced US B-mode image from a smaller volume of raw data and examining its performance when supervised by a set of high-quality images. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) 
 
 
                                 </p>
