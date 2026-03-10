@@ -10,7 +10,6 @@ sub: IEEE Transactions on Medical Imaging 저널 논문 게재 승인
 
 "Discovery of Peripheral Airway Beyond Incomplete CT Annotations for Navigational Bronchoscopy"
 <br>
-"Discovery of Peripheral Airway Beyond Incomplete CT Annotations for Navigational Bronchoscopy"
 위 논문에서는 흉부 CT 영상에서 기도(Airway)를 추출(분할; Segmentation)하기 위한 Anatomical Segmentation with Tree-aware Refinement Attention Network (ASTRA-Net)을 제안합니다.
 흉부 CT에서 기도는 내부가 어두운 원형 구조로 식별되는데, 얇은 기도로 갈수록 경계(Boundary)가 모호해지고, 내부와 외부의 픽셀 밝기 차이가 비슷하여 구분에 어려움이 있다. 
 이를 위하여 디자인된 ASTRA-Net은 흉부 구조물(혈관, 폐)와 기도의 형태(반지름, 중심과의 거리) 등의 해부학적인 지식을 이용하여 학습하는 네트워크이다. 보다 깊고 미세한 기도 추출을 위한 Edge-Guided Attention (EGA)를 도입하여 학습 단계를 거치고, 후최적화 단계에서는 저해상도 CT에 대처하기 위한 지식 증류 기반의 학습으로 미세 기도에 대한 민감성을 향상시켰다.
